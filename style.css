@@ -66,10 +66,11 @@ body {
   }
   .perfil__redes {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
   .perfil__redes a {
     color: var(--color-secundario);
+    font-size: 1.4rem;
   }
 
   /* Secciones */
