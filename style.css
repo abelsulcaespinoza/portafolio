@@ -164,6 +164,41 @@ body {
     font-size: 1rem;
     color: var(--color-secundario);
   }
+
+  /* Proyectos */
+  .proyectos__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .proyecto__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-secundario);
+  }
+  .proyecto__botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .boton__item {
+    padding: 5px 10px;
+    border: 1px solid var(--color-primario);
+    border-radius: 5px;
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .boton__item--marcado {
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+  }
+
   /* Footer */
   footer {
     display: flex;
@@ -176,4 +211,17 @@ body {
 
     color: var(--color-secundario);
   }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+footer p {
+  font-size: 0.8rem;
+
+  color: var(--color-secundario);
 }
