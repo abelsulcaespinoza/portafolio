@@ -18,6 +18,19 @@ body {
   color: #03fa6e;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+footer p {
+  font-size: 0.8rem;
+  color: var(--color-secundario);
+}
+
+/* Responsive Celulares */
 @media screen and (max-width: 425px) {
   /* Header */
   header {
@@ -76,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 10px 20px;
     color: var(--color-secundario);
     text-align: justify;
   }
@@ -120,9 +133,17 @@ body {
     gap: 20px;
   }
   .formaciones__list {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 7px;
+  }
+  .formaciones__list img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 150px;
   }
 
   .formaciones__list h3 {
@@ -187,14 +208,182 @@ body {
   }
 }
 
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-footer p {
-  font-size: 0.8rem;
-  color: var(--color-secundario);
+/* Responsive Tablets */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .logo__img {
+    display: block;
+  }
+
+  /* Nav */
+
+  .links__perfil {
+    display: none;
+  }
+
+  .link__contacto li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  /* Main */
+
+  /* Perfil */
+  .perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+  }
+  .perfil__foto {
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .perfil__paragraph {
+    font-size: 1rem;
+  }
+  .perfil__redes {
+    display: flex;
+    gap: 20px;
+  }
+  .perfil__redes a {
+    color: var(--color-secundario);
+    font-size: 1.4rem;
+  }
+
+  /* Secciones */
+  .sections {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 60px;
+    color: var(--color-secundario);
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: var(--color-primario);
+  }
+  /* Sobre mi */
+
+  /* Skills */
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skills__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 20%;
+    flex-grow: 1;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+  }
+  .skills__items h3 {
+    font-size: 1rem;
+  }
+
+  /* Formacion */
+  .formacion__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .formaciones__list {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .formaciones__list img {
+    width: 300px;
+    height: 150px;
+  }
+
+  .formaciones__list h3 {
+    font-size: 1.2rem;
+  }
+  .formaciones__list p {
+    font-size: 1rem;
+  }
+
+  /* Proyectos */
+  .proyectos__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .proyecto__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .proyecto__botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .boton__item {
+    padding: 5px 10px;
+    border: 1px solid var(--color-primario);
+    border-radius: 5px;
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .boton__item--marcado {
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+  }
+  /* Contacto */
+  .formulario {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 20px;
+  }
+  .formulario label {
+    font-size: 0.8rem;
+    color: var(--color-primario);
+  }
+  .btn__enviar {
+    padding: 5px 10px;
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    color: var(--color-fondo);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+  }
 }
