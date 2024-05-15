@@ -61,8 +61,6 @@ body {
   }
   .perfil__paragraph {
     font-size: 1rem;
-    text-align: justify;
-    color: var(--color-secundario);
   }
   .perfil__redes {
     display: flex;
@@ -79,19 +77,15 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    color: var(--color-secundario);
+    text-align: justify;
   }
+
   h2 {
     font-size: 1.5rem;
     color: var(--color-primario);
   }
   /* Sobre mi */
-  .sobremi {
-    color: var(--color-secundario);
-  }
-
-  .sobremi p {
-    text-align: justify;
-  }
 
   /* Skills */
 
@@ -117,7 +111,6 @@ body {
   }
   .skills__items h3 {
     font-size: 1rem;
-    color: var(--color-secundario);
   }
 
   /* Formacion */
@@ -134,11 +127,9 @@ body {
 
   .formaciones__list h3 {
     font-size: 1.2rem;
-    color: var(--color-secundario);
   }
   .formaciones__list p {
     font-size: 1rem;
-    color: var(--color-secundario);
   }
 
   /* Proyectos */
@@ -154,7 +145,6 @@ body {
     gap: 10px;
     justify-content: center;
     text-align: center;
-    color: var(--color-secundario);
   }
   .proyecto__botones {
     display: flex;
@@ -174,18 +164,26 @@ body {
     background-color: var(--color-primario);
     color: var(--color-fondo);
   }
-
-  /* Footer */
-  footer {
+  /* Contacto */
+  .formulario {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    flex-direction: column;
+    gap: 7px;
+    padding: 20px;
   }
-  footer p {
+  .formulario label {
     font-size: 0.8rem;
-
-    color: var(--color-secundario);
+    color: var(--color-primario);
+  }
+  .btn__enviar {
+    padding: 5px 10px;
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    color: var(--color-fondo);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
   }
 }
 
@@ -198,6 +196,5 @@ footer {
 }
 footer p {
   font-size: 0.8rem;
-
   color: var(--color-secundario);
 }
